@@ -38,6 +38,7 @@
 --------------------------------------------------------------*/
 
 * {
+	color: #181D33;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -62,9 +63,23 @@ html {
 	}
 }
 
+#dk-blue-bg {
+	background-color: #002C5B;
+}
+
 /*--------------------------------------------------------------
 4.0 - ELEMENTS
 -------------------------------------------------------------- */
+
+/* -- LISTS -- */ 
+
+.social li, header nav li {
+	display: inline-block;
+}
+
+.social {
+	padding: 0;
+}
 
 /* -- TYPOGRAPHY -- */ 
 
@@ -89,4 +104,72 @@ html {
 6.0 - COMPONENTS
 -------------------------------------------------------------- */
 
+/* -- BUTTONS -- */
+
+.btn {
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	padding: 1.5rem 3rem;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 1rem 0;
+}
+
+.btn-red {
+	background-color: #FF6569;
+	color: #FFF;
+	text-transform: uppercase;
+}
+
+.btn-ghost {
+	border: 2px #FF6569 solid;
+	color: #FF6569;
+}
+
 /* -- HEADER -- */
+
+#hero {
+	background: url("../img/hero.jpg") no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 1em;
+}
+
+#hero > div > p:first-child {
+	text-transform: uppercase;
+}
+
+#hero > div > p:nth-child(2) {
+	font-size: 5em;
+	font-weight: 900;
+	margin: 2rem 0;
+}
+
+/* -- NAVAGATION -- */
+
+
+
+
+/*--------------------------------------------------------------
+7.0 - UTILITIES
+-------------------------------------------------------------- */
+
+.f-right {
+	float: right;
+}
+
+.lt-blue-bg {
+	background-color: #F6F9FE;
+}
+
+.txt-red {
+	color: #FF6569;
+}
+
+.txt-white {
+	color: #FFF;
+}
