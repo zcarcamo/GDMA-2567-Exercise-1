@@ -14,7 +14,7 @@
 	
 	 <header>
 		 <div id="dk-blue-bg">
-			<div class="wrapper row txt-white">
+			<div class="wrapper row txt-white"> <!--txt-white is not overriding blue text when on parent container-->
 				<div class="col-lg-4">
 					<p>65/A, 17th floor, Kings land, New York</p>
 				</div>
@@ -30,17 +30,18 @@
 						<li><a href="https://www.facebook.com/" target="_blank"><span>Facebook</span></a></li>
 						<li><a href="https://www.google.com/" target="_blank"><span>Google+</span></a></li>
 					</ul>
+					<!--span {display:none;} makes sprites disappear as well, not sure why that is. Attempted to make display:none a class, but same result.-->
 				</div>
 			</div>
 		</div>
 		 
     	<div class="wrapper">
 			<div class="row">
-				<div>
-            		<h1>Buson.</h1>
+				<div class="col-sm-12 col-md-2 col-lg-4">
+            		<h1>Buson<span class="txt-red">.</span></h1>
 				</div>
 				
-            	<nav>
+            	<nav class="col-sm-12 col-md-7 col-lg-5">
                 	<ul>
                     	<li><a href="#">Home</a></li>
                     	<li><a href="#about">About</a></li>
@@ -51,15 +52,15 @@
                 	</ul>
             	</nav>
 				
-				<div>
+				<div class="col-sm-12 col-md-7 col-lg-3">
 					<p><a href="#contact" class="btn btn-red">Contact Now</a></p>
 				</div>
 		 	</div>
 		 </div>
 		 
 		<div id="hero">
-			<div class="wrapper row">
-				<div class="col-lg-4">
+			<div class="wrapper row txt-uppercase">
+				<div class="col-lg-8">
 					<p class="txt-red">Welcome to Buson</p>
 					<p>We help you to grow your business</p>
 					<p><a href="#about" class="btn btn-red">Learn More</a></p>
@@ -204,13 +205,13 @@
 	<footer id="pages">
 		<div class="wrapper row">
 			<section class="col-sm-12 col-lg-3">
-				<h4><img src="img/" alt=" "></h4>
+				<h4>Buson<span class="txt-red">.</span></h4>
 				<p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<ul class="social">
-					<li><a href="https://www.facebook.com/" target="_blank"><span>Facebook</span></a></li>
-					<li><a href="https://www.twitter.com/" target="_blank"><span>Twitter</span></a></li>
-					<li><a href="https://www.linkedin.com/" target="_blank"><span>LinkedIn</span></a></li>
-					<li><a href="https://www.pinterest.com/" target="_blank"><span>Pinterest</span></a></li>
+					<li><a href="https://www.facebook.com/" target="_blank"><span class="none">Facebook</span></a></li>
+					<li><a href="https://www.twitter.com/" target="_blank"><span class="none">Twitter</span></a></li>
+					<li><a href="https://www.linkedin.com/" target="_blank"><span class="none">LinkedIn</span></a></li>
+					<li><a href="https://www.pinterest.com/" target="_blank"><span class="none">Pinterest</span></a></li>
 				</ul>
 			</section>
 			
@@ -254,8 +255,7 @@
 		</div>
 	</footer>
   
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 <script src="js/functions.js"></script>
-<script src="js/smooth-scroll.js"></script>
 </body>
 </html>

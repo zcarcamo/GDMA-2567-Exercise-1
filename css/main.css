@@ -68,6 +68,26 @@ html {
 4.0 - ELEMENTS
 -------------------------------------------------------------- */
 
+a {
+	text-decoration:none;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+header nav li {
+	margin-left: 1.25rem;
+}
+
+a:hover {
+	color: #FF6569;
+}
+
 /* -- TYPOGRAPHY -- */ 
 
 
@@ -100,7 +120,7 @@ html {
 	text-decoration: none;
 	font-size: 1rem;
 	font-weight: 700;
-	margin: 1rem 0;
+	margin: 3rem 0;
 }
 
 .btn-red {
@@ -109,9 +129,20 @@ html {
 	text-transform: uppercase;
 }
 
+.btn-red:hover {
+	background-color: #FFF;
+	border: 2px #FF6569 solid;
+	color: #FF6569;
+}
+
 .btn-ghost {
 	border: 2px #FF6569 solid;
 	color: #FF6569;
+}
+
+.btn-ghost:hover {
+	border: 2px #002C5B solid;
+	color: #002C5B;
 }
 
 /* -- HEADER -- */
@@ -126,19 +157,37 @@ html {
 	padding: 1rem;
 }
 
+#hero > div {
+	padding-top: 5rem;
+}
+
+#hero > div:last-child {
+	padding-bottom: 5rem;
+}
+
 #hero > div > p:first-child {
 	text-transform: uppercase;
 }
 
-#hero > div > p:nth-child(2) {
+#hero > div > div > p:nth-child(2) {
 	font-size: 5rem;
 	font-weight: 900;
-	margin: 2em 0;
+	margin: .5rem 0;
+}
+
+#hero > div > div > p:nth-child(3) {
+	margin: 3rem 0;
 }
 
 /* -- NAVAGATION -- */
 
 /* -- LAYOUT -- */
+
+#dk-blue-bg {
+	background-color: #002C5B;
+	color: #FFF;
+}
+
 
 .social li, header nav li {
 	display: inline-block;
@@ -147,9 +196,30 @@ html {
 .social {
 	padding: 0;
 }
+ 
+.social li a {
+	width: 20px;
+	height: 20px;
+}
 
-#dk-blue-bg {
-	background-color: #002C5B;
+.social li:first-child a {
+	background: url("../img/icon-facebook-white.png") no-repeat 0 0;	
+}
+
+.social li:nth-child(2) a {
+	background: url("../img/icon-twitter-white.png") no-repeat 0 0;	
+}
+
+.social li:nth-child(3) a {
+	background: url("../img/icon-facebook-white.png") no-repeat 0 0;	
+}
+
+.social li:last-child a {
+	background: url("../img/icon-pinterest-white.png") no-repeat 0 0;	
+}
+
+.social li a:hover {
+	background-position: 0 -20px;
 }
 
 /*--------------------------------------------------------------
@@ -171,3 +241,8 @@ html {
 .txt-white {
 	color: #FFF;
 }
+
+.txt-uppercase {
+	text-transform: uppercase;
+}
+
